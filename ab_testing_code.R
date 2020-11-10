@@ -1,7 +1,7 @@
 ## A/B Testing Udacity Final Course Project ##
 ## Refer https://docs.google.com/document/u/1/d/1aCquhIqsUApgsxQ8-SQBAigFDcfWVVohLEXcV6jWbdI/pub?embedded=True for more information
 
-##Udacity is adding a screener after the "join free trial" button to check the number for hours the student can devote 
+##Udacity is adding a screener after the "join free trial" button to check the number of hours the student can devote 
 ##If the student can devote <5hrs then it will prompt a message to "access the materials"
 ##the hypothesis/rationale is that this might set clearer expectations for students upfront thus reducing the number of frustrated students who left the free trial  
 #because they didn't have enough time—without significantly reducing the number of students to continue past the free trial and eventually complete the course.
@@ -130,6 +130,6 @@ net_conversion_pvalue<-binom.test(10,23)
 paste0("gross conversion pvalue is ", round(gross_conversion_pvalue$p.value,3))
 paste0("net conversion pvalue is ", round(net_conversion_pvalue$p.value,3))
 
-## the gross conversion rates are signiifcantly lower in the experimental group 
-#the net conversion rate is not significantly different 
+## the gross conversion rates are signiifcantly lower in the experimental group compared to the experimental group
+#the net conversion rate is not significantly different in the control and experimental group
 #since the gross conversion rates are significantly lower in the experiment group so we wouldn't recommend launching this screener
